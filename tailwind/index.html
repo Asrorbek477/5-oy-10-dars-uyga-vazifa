@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Request</title>
+</head>
+<body class=" bg-amber-200 h-lvh">
+    <h1 class="text-center  font-bold text-3xl pt-5">Request</h1>
+    <ul id="users-list"></ul>
+    <template>
+        <div class="card w-96  shadow-2xl  p-5 mb-5 inline-block m-8 bg-sky-100 duration-75 cursor-pointer ">
+           <p class="text-[green] font-400 ">Website: <span class="website"></span></p>
+           <h3 class="text-[green] font-400">Username: <span class="username"></span></h3>
+           <p class="text-[green] font-400">Phone: <span class="phone"></span></p>
+        </div>
+    </template>
+    <div id="overlay" class="absolute top-0 left-0 hidden">
+        <span class="loading loading-spinner loading-xs"></span>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
